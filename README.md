@@ -18,23 +18,40 @@ A simple **Book Management System** developed as part of the **Azura Labs** tech
 
 ```text
 BOOK_MANAGER/
-├── assets/                 # CSS, JS, images
-├── config/
-│   └── database.php        # Database configuration
-├── books/
-│   ├── index.php
-│   ├── create.php
-│   ├── edit.php
-│   └── delete.php
-├── categories/
-│   ├── index.php
-│   ├── create.php
-│   ├── edit.php
-│   └── delete.php
-├── includes/
-│   ├── header.php
-│   ├── navbar.php
-│   └── footer.php
+├── backend/
+│   ├── api/
+│   │   ├── books/
+│   │   │   ├── create_book.php
+│   │   │   ├── delete_book.php
+│   │   │   ├── get_books.php
+│   │   │   └── update_book.php
+│   │   │
+│   │   ├── category/
+│   │   │   ├── create_category.php
+│   │   │   ├── delete_category.php
+│   │   │   ├── get_categories.php
+│   │   │   └── update_category.php
+│   │   │
+│   │   └── get_dashboard.php
+│   │
+│   └── config/
+│       └── database.php
+│
+├── frontend/
+│   ├── books/
+│   │   ├── create.php
+│   │   ├── edit.php
+│   │   └── index.php
+│   │
+│   ├── categories/
+│   │   ├── create.php
+│   │   ├── edit.php
+│   │   └── index.php
+│   │
+│   └── includes/
+│       ├── header.php
+│       └── footer.php
+│
 ├── database.sql
 ├── index.php
 └── README.md
@@ -44,40 +61,42 @@ BOOK_MANAGER/
 
 ## ✨ Features
 
-### 📖 Book Management
+### 📚 Book Management
 
-* View all books
-* Add new book
-* Edit book information
-* Delete book
-* Book category relationship
-* Publication date management
-* Author and publisher management
-* Number of pages management
+- Create, update, and delete books
+- View a list of all books
+- Assign books to categories
+- Filter books by category
+- Search books by title, author, or publisher
+- Filter books by publication date
 
 ### 🏷️ Category Management
 
-* View all categories
-* Create category
-* Edit category
-* Delete category
-* Prevent duplicate category names
+- Create, update, and delete book categories
+- View a list of all categories
 
-### 🎨 User Interface
+### ⚡ Interactive Features
 
-* Responsive design using Tailwind CSS
-* Clean and modern interface
-* Simple navigation
-* User-friendly forms
-* Confirmation before deleting data
+- **Live Search (AJAX)** – Search results are updated dynamically as users type, without reloading the page or pressing Enter.
+- **Pagination** – Display book records across multiple pages for better performance and usability.
+- **Responsive UI** – Built with Tailwind CSS for a clean and responsive user interface.
 
-### 🗄️ Database
+### 💾 Database
 
-* MySQL relational database
-* UUID as primary key
-* Foreign key constraints
-* Automatic timestamps
-* PDO prepared statements for secure database access
+- MySQL relational database
+- UUID as the primary key
+- Foreign key constraints to maintain data integrity
+- Automatic `created_at` and `updated_at` timestamps
+
+## 🌟 Highlights
+
+- Native PHP (No Framework)
+- PDO for secure database operations
+- Tailwind CSS for responsive styling
+- AJAX-powered live search
+- Pagination for efficient data browsing
+- Relational database design with UUID and foreign keys
+- Clean project structure separating frontend and backend logic
 
 ---
 
