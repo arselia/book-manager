@@ -1,10 +1,10 @@
-# 📚 Book Manager
+# Book Manager
 
 A simple **Book Management System** developed as part of the **Azura Labs** technical assignment. This application is built using **Native PHP**, **MySQL**, and **Tailwind CSS**, implementing a clean and lightweight CRUD architecture without using any framework.
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 * **Backend:** Native PHP
 * **Frontend:** Native PHP
@@ -14,7 +14,7 @@ A simple **Book Management System** developed as part of the **Azura Labs** tech
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 BOOK_MANAGER/
@@ -59,9 +59,9 @@ BOOK_MANAGER/
 
 ---
 
-## ✨ Features
+## Features
 
-### 📚 Book Management
+### Book Management
 
 - Create, update, and delete books
 - View a list of all books
@@ -70,12 +70,12 @@ BOOK_MANAGER/
 - Search books by title, author, or publisher
 - Filter books by publication date
 
-### 🏷️ Category Management
+### Category Management
 
 - Create, update, and delete book categories
 - View a list of all categories
 
-### ⚡ Interactive Features
+### Interactive Features
 
 - **Live Search (AJAX)** – Search results are updated dynamically as users type, without reloading the page or pressing Enter.
 - **Pagination** – Display book records across multiple pages for better performance and usability.
@@ -88,7 +88,7 @@ BOOK_MANAGER/
 - Foreign key constraints to maintain data integrity
 - Automatic `created_at` and `updated_at` timestamps
 
-## 🌟 Highlights
+## Highlights
 
 - Native PHP (No Framework)
 - PDO for secure database operations
@@ -100,7 +100,7 @@ BOOK_MANAGER/
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ### 1. Clone Repository
 
@@ -179,7 +179,7 @@ Or place the project inside your web server directory:
 
 ---
 
-## 🗃 Database Schema
+## Database Schema
 
 ### Categories
 
@@ -206,7 +206,7 @@ Or place the project inside your web server directory:
 
 ---
 
-## 🔒 Security
+## Security
 
 * PDO Prepared Statements
 * Input Validation
@@ -215,7 +215,7 @@ Or place the project inside your web server directory:
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 * Authentication & Authorization
 * Search and filter books
@@ -228,8 +228,6 @@ Or place the project inside your web server directory:
 
 ---
 
-## 👩‍💻 Developed For
+## Developed For
 
 **Azura Labs – Technical Assessment**
-
-Built with ❤️ using Native PHP, MySQL, and Tailwind CSS.
